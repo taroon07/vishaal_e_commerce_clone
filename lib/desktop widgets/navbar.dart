@@ -44,8 +44,12 @@ class _NavbarState extends State<Navbar> {
           Padding(
             padding: EdgeInsets.only(
                 right: MediaQuery.of(context).size.width * 0.025),
-            child:
-                ElevatedButton(onPressed: () {}, child: const Text("Sign Up")),
+            child: ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  "Sign Up",
+                  style: TextStyle(color: Colors.black),
+                )),
           )
         ],
       ),
