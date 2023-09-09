@@ -14,7 +14,7 @@ class _NavbarState extends State<Navbar> {
     return Container(
       color: Colors.black,
       width: double.infinity,
-      height: 60,
+      height: 80,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

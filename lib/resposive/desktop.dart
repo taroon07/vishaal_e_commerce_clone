@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vishaal_e_commerce_clone/desktop widgets/navbar.dart';
+import 'package:vishaal_e_commerce_clone/desktop widgets/homepage.dart';
+import 'package:vishaal_e_commerce_clone/desktop widgets/about.dart';
 
 class DestopLayout extends StatefulWidget {
   const DestopLayout({super.key});
@@ -14,9 +16,11 @@ class _DestopLayoutState extends State<DestopLayout> {
     return Column(
       children: [
         Navbar(),
-        SingleChildScrollView(
-          child: Column(
-            children: [],
+        Expanded(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [Homescreen(), Aboutpage()],
+            ),
           ),
         )
       ],
