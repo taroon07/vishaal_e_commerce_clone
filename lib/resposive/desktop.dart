@@ -13,7 +13,7 @@ class DestopLayout extends StatefulWidget {
 class _DestopLayoutState extends State<DestopLayout> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         Navbar(),
         Expanded(
