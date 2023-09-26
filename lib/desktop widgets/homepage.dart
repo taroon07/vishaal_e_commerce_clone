@@ -24,9 +24,6 @@ class Homescreen extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            const SizedBox(
-              height: 1,
-            ),
             Center(
               child: Text(
                 "Black is the new black!.",
@@ -37,7 +34,7 @@ class Homescreen extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 25,
+              height: 60,
             ),
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
@@ -59,17 +56,14 @@ class Homescreen extends StatelessWidget {
                         ),
                       ),
                     )),
-                    InkWell(
-                      onTap: () {},
-                      child: Container(
-                        width: 150,
-                        color: Colors.black,
-                        child: const Center(
-                          child: Text(
-                            "Get Started",
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
+                    Container(
+                      width: 150,
+                      color: Colors.black,
+                      child: Center(
+                        child: TextButton(
+                            onPressed: () {},
+                            child: const Text("Get Started",
+                                style: TextStyle(color: Colors.white))),
                       ),
                     )
                   ],
